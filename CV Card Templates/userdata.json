@@ -1,0 +1,26 @@
+{
+	"i": {
+		"__metadata": {
+			"id": "Sections_ResumeSet(2L)",
+			"uri": "Sections_ResumeSet(2L)"
+		},
+		"Contacts": {
+			"__deferred": {
+				"uri": "Sections_ResumeSet(2L)/Contacts"
+			}
+		},
+		"Headline": "Emina Tuzovic 14 Allée de l’Isara 95000 Cergy, France https://www.linkedin.com/in/emina-tuzovi%C4%87-928ab3153/ +33 7 61 45 65 34tuzovicemina@gmail.com ",
+		"Summary": "Highly motivated young professional, ENSEA undergraduate. Positive, passionate and attentioned to details. Strong communication skills. Ready to seek out new challenges and adapt to diverse situations, enjoys working in a fast paced environment.",
+		"Experience": "June 2019 - August 2019 Solar Energy Research Institute of Singapore , Singapore - Engineering intern Led a theoretical analysis to test the reliability of the four point probe device as a sheet resistance measurement technique, considered as an important parameter for solar cell performance. Conducted various experiments by testing different samples of solar wafers (thin slice of Silicon semiconductor) in order to confirm the theoretical analysis. June 2017 - August 2017 The National Office of Food Safety, Kenitra, Morocco - Bioengineering Intern Used a software based on the principle of RTPCR (Real Time Polymerase Chain Reaction) to diagnose plant diseases",
+		"ResumeID": "2",
+		"Education": "2018 - 2021 ENSEA Graduate School, Cergy, France - Pursuing Masters, Computer Science and Electrical Engineering Recent project: Designed a cartography of electromagnetic areas in Cergy by editing a Python code and gathering the data provided online by the ANFR (National Agency of Frequencies). Major: A.I and Big Data. 2016 - 2018 Lycée Polyvalent Franklin Roosevelt, Reims, France - Post-secondary Education (Preparatory Classes for Engineering Schools) Maths, Physics and Engineering major. Final project: Designed a control loop for an Earth-Air Heat Exchanger system in order to adapt its cooling functions for countries with high temperatures. July 2014 - August 2014 Goethe Summer Camp, Bonn, Germany - German Language Courses 2006 - 2014 American Language Center, Kenitra, Morocco - English Language Courses",
+		"Languages": "English: TOEFL (98/120) and TOEIC (945/1000) (Fluent) French: DALF C1 (Fluent) Arabic : Moroccan and Classical (Native Speaker) Montenegrin, Serbian, Croatian, Bosnian (Native Speaker) German: A2+ (Intermediate level)",
+		"Personnal": "Member of ENSEA's sailing team, took part in the 51st annual regatta (EDHEC Boat Cup). Currently treasurer of the sailing club (responsible of sponsorship with various firms such as Sopra Steria in order to finance the skipper, purchase the uniforms and rent the sailing boat for the annual regatta) . Head of events in ENSEA’s 2019 Students Bureau. The biggest event organised so far with the events pole included a budget of 26,000 Euros. Oil and acrylic painter. Participated in national exhibitions and art sales (attended art sales and price negotiations). Accomplished tennis player. Took part in national tournaments and elected captain of the university's tennis team. 2015 Volunteer in Dar Lakbira, a non profit organization that supports orphanage care and education in Morocco. Team leader at La Parole d’Or 2014 edition debate team, awarded second place. Passionate mountain climber and hiker, reached a few peaks in Europe and the highest one in northern Africa.",
+		"Skills": "Programming skills: C++, Python, SQL, VHDL Software skills: Matlab, Mathematica, SolidWorks"
+		"inContact": {
+			"__deferred": {
+				"uri": "Sections_Resume(2L)/inContact"
+			}
+		}
+	}
+}
