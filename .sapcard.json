@@ -1,0 +1,20 @@
+[
+	{
+		"Backend": "com.sap.edm.sampleservice.v2",
+		"CardID": "71C7FB69-F5A9-45F8-AF99-6524A56A04C3",
+		"DestinationName": "mobileservices_cf",
+		"ReferenceCardTypeId": "93F36ED0-1600-47D9-B134-0EAA67E6C2BA",
+		"Validate": false,
+		"Version": "1.0",
+		"isCF": true
+	},
+	{
+		"Backend": "SAPCPMobileServices",
+		"CardID": "44240A05-A692-4AE3-9802-C12EC089517B",
+		"DestinationName": "mobileservices",
+		"ReferenceCardTypeId": "0441E50A-5D37-4CA7-A993-B5B04FC5E952",
+		"Validate": false,
+		"Version": "1.0",
+		"isCF": false
+	}
+]
