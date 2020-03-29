@@ -19,7 +19,6 @@
 			<l:BlockLayout background="Light">
 				<l:BlockLayoutRow>
 					<l:BlockLayoutCell>
-						<!--<core:Icon color="#1873B4" src="sap-icon://sap-ui5" size="20rem" class="sapUiMediumMarginBottom" width="100%"/>-->
 						<Title level="H1" titleStyle="H1" text="Sections" width="100%" textAlign="Center"/>
 					</l:BlockLayoutCell>
 				</l:BlockLayoutRow>
@@ -119,7 +118,6 @@
 							<Switch change=".onChange" customTextOn="yes" customTextOff="no"/>
 							<l:HorizontalLayout id="ready" visible="false" class="sapUiSmallMargin">
 								<Text text="Email address: tuzovicemina@gmail.com, Phone number: +33 7 61 45 65 34" class="sapUiTinyMarginEnd"/>
-								<!--<Link text="Learn more" href="https://openui5.hana.ondemand.com/"/>-->
 							</l:HorizontalLayout>
 						</Panel>
 					</l:BlockLayoutCell>
