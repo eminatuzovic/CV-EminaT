@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:edmx4="http://docs.oasis-open.org/odata/ns/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <edmx4:Reference Uri="vocabularies/com.sap.cloud.server.odata.sql.v1.xml">
+        <edmx4:Include Namespace="com.sap.cloud.server.odata.sql.v1" Alias="SQL"/>
+    </edmx4:Reference>
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="com.opensap.mobile.emina" Alias="emina" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Contact">
+                <Key>
+                    <PropertyRef Name="ContactID"/>
+                </Key>
+                <Property Name="ContactID" Type="Edm.Int64" Nullable="false"/>
+                <NavigationProperty Name="Contact_Emina" Relationship="emina.Sections_Resume_to_InSections_Resume" FromRole="ContactPrincipal" ToRole="Sections_ResumeDependent"/>
+            </EntityType>
+            <EntityType Name="Sections_Resume">
+                <Key>
+                    <PropertyRef Name="Sections_ResumeID"/>
+                </Key>
+                <Property Name="ContactID" Type="Edm.Int64" Nullable="false"/>
+                <Property Name="Education" Type="Edm.String" Nullable="false" MaxLength="50000"/>
+                <Property Name="Experience" Type="Edm.String" Nullable="false" MaxLength="5000"/>
+                <Property Name="Languages" Type="Edm.String" Nullable="false" MaxLength="1000"/>
+                <Property Name="Personnal" Type="Edm.String" Nullable="false" MaxLength="7000"/>
+                <Property Name="Sections_ResumeID" Type="Edm.Int64" Nullable="false"/>
+                <Property Name="Skills" Type="Edm.String" Nullable="false" MaxLength="500"/>
+                <Property Name="Summary" Type="Edm.String" Nullable="false" MaxLength="1000"/>
+                <NavigationProperty Name="inSections_Resume" Relationship="emina.Sections_Resume_to_InSections_Resume" FromRole="Sections_ResumeDependent" ToRole="ContactPrincipal"/>
+            </EntityType>
+            <Association Name="Sections_Resume_to_InSections_Resume">
+                <End Type="emina.Sections_Resume" Multiplicity="*" Role="Sections_ResumeDependent"/>
+                <End Type="emina.Contact" Multiplicity="1" Role="ContactPrincipal"/>
+                <ReferentialConstraint>
+                    <Principal Role="ContactPrincipal">
+                        <PropertyRef Name="ContactID"/>
+                    </Principal>
+                    <Dependent Role="Sections_ResumeDependent">
+                        <PropertyRef Name="ContactID"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="EminaService" m:IsDefaultEntityContainer="true">
+                <Annotation Term="SQL.TrackChanges" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+                <EntitySet Name="ContactSet" EntityType="emina.Contact"/>
+                <EntitySet Name="Sections_ResumeSet" EntityType="emina.Sections_Resume"/>
+                <AssociationSet Name="Sections_ResumeSet_to_ContactSet" Association="emina.Sections_Resume_to_InSections_Resume">
+                    <End EntitySet="Sections_ResumeSet" Role="Sections_ResumeDependent"/>
+                    <End EntitySet="ContactSet" Role="ContactPrincipal"/>
+                </AssociationSet>
+                <FunctionImport Name="GetResume" m:HttpMethod="GET" ReturnType="emina.Sections_Resume">
+                    <Parameter Name="Sections_ResumeID" Type="Edm.Int64" Nullable="false"/>
+                    <Parameter Name="ContactID" Type="Edm.Int64" Nullable="false"/>
+                </FunctionImport>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
